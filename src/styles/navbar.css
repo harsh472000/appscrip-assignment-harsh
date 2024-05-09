@@ -1,0 +1,57 @@
+nav{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.uppercontent{
+    width: 100%;
+    padding: 8px 0px;
+    background-color: black;
+}
+
+.uppercontent > span {
+    color: var(--red-color);
+    display: flex;
+}
+
+.navbar__headerSvg{
+    margin-right: 10px;
+}
+
+.lowercontent{
+    justify-content: space-between;
+    height: 100px;
+}
+
+.navbar__logo-img{
+    width: 10%;
+}
+
+.navbar__icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navbar__icons > li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar__links{
+    display: flex;
+    justify-content: center;
+    gap:65px;
+}
+
+.navbar__links__label{
+    font-size: 20px;
+    font-weight: 800;
+}
