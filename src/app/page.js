@@ -2,8 +2,10 @@ import Hero from "@/components/Hero";
 import ProductList from "@/components/ProductList";
 import { fetchProducts } from "@/utils/api";
 
-export default function Home() {
-  const products = fetchProducts();
+export default async function Home() {
+  const products = await fetchProducts();
+  console.log("products *********************");
+  console.log(products);
   return (
     <main className="container">
       <Hero />

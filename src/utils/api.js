@@ -5,5 +5,5 @@ async function fetchProducts() {
     return data;
   }
   
-  export { fetchProducts };
+export { fetchProducts };
   

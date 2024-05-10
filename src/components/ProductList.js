@@ -37,7 +37,7 @@ const ProductList = ({ products }) => {
       <div className="productList__content">
         {toggle && <Filters />}
         <div className={` ${toggle ?'content__products__toggle' : 'content__products' }`}>
-          {products.map((product, index) => {
+          {products?.map((product, index) => {
             return (
                 <ProductCard key={index} img={product.image} title={product.title}/>
             );
