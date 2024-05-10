@@ -74,9 +74,9 @@ const Footer = () => {
                     <div className="followus__icons">
                         <ul>
                             {
-                                FOOTERSOCIALICONS.map((icon)=>{
+                                FOOTERSOCIALICONS.map((icon, index)=>{
                                     return(
-                                        <li><Image src={icon.icon} alt={icon.label} /></li>
+                                        <li key={index}><Image src={icon.icon} alt={icon.label} /></li>
                                     )
                                 })
                             }
@@ -88,9 +88,9 @@ const Footer = () => {
                 <div className="payments__icons">
                     <ul>
                     {
-                                PAYMENTICONS.map((paymentIcon)=>{
+                                PAYMENTICONS.map((paymentIcon,index)=>{
                                     return(
-                                        <li><Image src={paymentIcon.icon} alt={paymentIcon.label} /></li>
+                                        <li key={index}><Image src={paymentIcon.icon} alt={paymentIcon.label} /></li>
                                     )
                                 })
                             }
