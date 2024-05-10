@@ -15,9 +15,9 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navbar uppercontent">
-        {HEADER_TEXT.map((headerText) => {
+        {HEADER_TEXT.map((headerText,index) => {
           return (
-            <span>
+            <span key={index}>
               <Image src={header} alt="lorem" className="navbar__headerSvg" />{" "}
               {headerText}
             </span>
@@ -33,9 +33,9 @@ const Navbar = () => {
         </div>
         <ul className="navbar__icons">   
         {
-            NAVBAR_ICONS.map((icons)=>{
+            NAVBAR_ICONS.map((icons,index)=>{
                 return(
-                    <li>
+                    <li key={index}>
                     <Image src={icons} alt="Search" />
                   </li>
                 )

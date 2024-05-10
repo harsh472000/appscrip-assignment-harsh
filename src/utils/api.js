@@ -1,5 +1,6 @@
 async function fetchProducts() {
-    const response = await fetch('https://fakestoreapi.com/products');
+    const apiLink = process.env.API_LINK;
+    const response = await fetch(apiLink);
     const data = await response.json();
     return data;
   }
