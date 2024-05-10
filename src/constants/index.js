@@ -9,7 +9,7 @@ import MasterCard from '../assets/MasterCard.svg'
 import Paypal from '../assets/Paypal.svg'
 import Amex from '../assets/Amex.svg'
 import ApplePay from '../assets/ApplePay.svg'
-import ZPay from  '../assets/ZPay.svg'
+import ZPay from  '../assets/Zpay.svg'
 
 
 export const HEADER_TEXT = [
