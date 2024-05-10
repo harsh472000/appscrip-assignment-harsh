@@ -2,6 +2,15 @@ import Shopping from '../assets/Shopping.svg'
 import Profile from '../assets/Profile.svg'
 import Search from '../assets/Search.svg'
 import Heart from '../assets/Heart.svg'
+import Instagram from '../assets/Instagram.svg'
+import Linkedin from '../assets/Linkedin.svg'
+import Gpay from '../assets/Gpay.svg'
+import MasterCard from '../assets/MasterCard.svg'
+import Paypal from '../assets/Paypal.svg'
+import Amex from '../assets/Amex.svg'
+import ApplePay from '../assets/ApplePay.svg'
+import ZPay from  '../assets/ZPay.svg'
+
 
 export const HEADER_TEXT = [
     'Lorem isup doller',
@@ -10,7 +19,7 @@ export const HEADER_TEXT = [
 ]
 
 export const NAVBAR_ICONS = [
-    Shopping,Profile,Search,Heart
+    Search,Heart,Shopping,Profile
 ]
 
 export const NAVBAR_LINKS = [
@@ -29,6 +38,11 @@ export const SORTINGMENU = [
     {value:"lowToHigh", label:"Price : low to high"}
 ] 
 
+export const LANGUAGEOPTION = [
+    {value:"english", label:"ENG"},
+    {value:"hindi", label:"HIN"}
+]
+
 export const FILTERDATA = [
     { title: 'Gender', options: ["Men", "Women", "Baby & Kids"] },
     { title: 'Occasion', options: ["Rainy Season", "Casual", "Wedding", "Party", "Regular"] },
@@ -46,6 +60,29 @@ export const FOOTERLEFTLINKS = [
     {href:"#", key:'artisans', label:"Artisans"},
     {href:"#", key:'boutiques', label:"Boutiques"},
     {href:"#", key:'contact-us', label:"Contact Us"},
-    {href:"#", key:'docs', label:"EU Compliances Docs"}
-    
+    {href:"#", key:'docs', label:"EU Compliances Docs"}   
+]
+
+export const FOOTERQUICKLINKS = [
+    {href:"#", key:'ordershipping', label:"Orders & Shipping"},
+    {href:"#", key:'seller', label:"Join/Login as a Seller"},
+    {href:"#", key:'payment', label:"Payment & Pricing"},
+    {href:"#", key:'return', label:"Return & Refunds"},
+    {href:"#", key:'faqs', label:"FAQs"},
+    {href:"#", key:'privacy-policy', label:"Privacy Policy"},
+    {href:"#", key:'termsandconditions',label:"Terms & Conditions"}
+]
+
+export const FOOTERSOCIALICONS = [
+    {href:"#", icon: Instagram, label:"Instagram"},
+    {href:"#", icon: Linkedin, label:"Linkedin"}
+]
+
+export const PAYMENTICONS = [
+    {href:"#", icon: Gpay, label:"Google Pay"},
+    {href:"#", icon: MasterCard, label:"Master Card"},
+    {href:"#", icon: Paypal, label:"Paypal"},
+    {href:"#", icon: Amex, label:"Amex"},
+    {href:"#", icon: ApplePay, label:"Apple Pay"},
+    {href:"#", icon: ZPay, label:"Zero Pay"},
 ]

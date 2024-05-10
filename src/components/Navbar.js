@@ -5,9 +5,11 @@ import Logo from '../assets/Logo.svg'
 
 
 import "../styles/navbar.css";
+import '../styles/productList.css'
 
-import { HEADER_TEXT, NAVBAR_ICONS, NAVBAR_LINKS } from "@/constants";
+import { HEADER_TEXT, NAVBAR_ICONS, NAVBAR_LINKS, LANGUAGEOPTION } from "@/constants";
 import Link from "next/link";
+import { convertToUpperCase } from "@/utils/convertUppercase";
 
 const Navbar = () => {
   return (
@@ -39,6 +41,17 @@ const Navbar = () => {
                 )
             })
         }
+        <li><div className="productList__sorting">
+          <select className="font-bold">
+            {LANGUAGEOPTION.map((item, index) => {
+              return (
+                <option key={index} value={item.value}>
+                  {convertToUpperCase(item.label)}
+                </option>
+              );
+            })}
+          </select>
+        </div></li>
         </ul>
       </div>
       <div className="container">
@@ -46,7 +59,7 @@ const Navbar = () => {
             {
                 NAVBAR_LINKS.map((link)=>{
                     return(
-                        <Link href={link.href} key={link.key} className="navbar__links__label">{link.label}</Link>
+                        <Link href={link.href} key={link.key} className="navbar__links__label">{convertToUpperCase(link.label)}</Link>
                     )
                 })
             }

@@ -1,5 +1,8 @@
-import { convertToUpperCase } from "@/utils/convertUppercase";
 import React, { useState } from "react";
+import { convertToUpperCase } from "@/utils/convertUppercase";
+import ArrowDown from "../assets/ArrowDown.svg";
+import ArrowUp from "../assets/ArrowUp.svg"
+import Image from "next/image";
 
 const FilterGroup = ({ title, options }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +17,7 @@ const FilterGroup = ({ title, options }) => {
           <span className="filter-subtitle">All</span>{" "}
         </div>
         <div>
-          <span className="filter-toggle-icon">{isOpen ? "▼" : "▲"}</span>
+          <span className="filter-toggle-icon"><Image src={isOpen ? ArrowUp : ArrowDown} alt={isOpen ? "Collapse" : "Expand"} /></span>
         </div>
       </div>
       {isOpen && (

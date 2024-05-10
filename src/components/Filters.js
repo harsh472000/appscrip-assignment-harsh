@@ -3,9 +3,10 @@ import FilterGroup from "./FilterGroup";
 import "../styles/filters.css";
 import { FILTERDATA } from "@/constants";
 
+
 const Filters = () => {
   return (
-    <div className="filters-sidebar">
+    <aside className="filters-sidebar">
       <div className="filter-group__first">
         <input type="checkbox" />
         <span className="filter-title filter-option__label">Customizable</span>
@@ -17,7 +18,7 @@ const Filters = () => {
           options={filter.options}
         />
       ))}
-    </div>
+    </aside>
   );
 };
 
