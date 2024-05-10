@@ -4,8 +4,6 @@ import { fetchProducts } from "@/utils/api";
 
 export default async function Home() {
   const products = await fetchProducts();
-  console.log("products *********************");
-  console.log(products);
   return (
     <main className="container">
       <Hero />
